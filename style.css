@@ -1,0 +1,128 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@font-face {
+    font-family: "Poppins";
+    src: url(./assets/fonts/Poppins-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: hsl(0, 0%, 94%);
+    max-width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    font-family: "Poppins", sans-serif;
+    flex-direction: row;
+    @media (max-width: 375px) {
+        
+        width: 80%;
+        font-size: 10px;
+      
+    }
+
+}
+main{
+    background-color: hsl(0, 0%, 100%);
+    /* height: 400px; */
+    width: 600px;
+    border-radius: 10px 10px 80px 10px;
+    padding: 40px;
+    position: relative;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 375px) {
+        
+        width: 80%;
+        font-size: 10px;
+      
+    }
+    
+}
+
+.time_block{
+    display: inline-flex;
+    gap: 20px;
+    padding-bottom: 20px;
+    @media (max-width: 375px) {       
+    display: flex;      
+    }
+    
+}
+.time {
+    display: flex;
+    flex-direction: column;
+}
+input{
+    padding: 10px;
+    width: 80px;
+    font-weight: 700;
+    font-size: 20px;
+    border: 1px solid rebeccapurple;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+input[type=text]{
+    font-weight: 600;
+    font-size: 20px;
+    font-style:normal;
+}
+
+label{
+    color: hsl(0, 1%, 44%);
+    font-weight: 600;
+}
+span,h1{
+    font-weight: 800;
+    font-size: 60px;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+
+    @media (max-width: 375px) {
+        
+        /* width: 80%; */
+        font-size: 20px;
+      
+    }
+    
+}
+h1{
+    @media (max-width: 375px) {
+        
+        font-size: 45px;
+      
+    }
+}
+span{
+    color: blueviolet;
+}
+.date{
+    display: inline-flex;
+}
+img{
+    background-color: blueviolet;
+    padding: 10px;
+    border-radius: 50% ;
+    position: absolute;
+    left: 65%;
+    top: 25%;
+    @media (max-width: 415px) {
+        
+        position: absolute;
+        right: 9rem;
+        top: 8.5rem;
+    }
+}
+hr{
+    margin: 40px;
+}
